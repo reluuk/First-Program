@@ -1,7 +1,5 @@
 import random
 def save_score(score):
-    #speichert den Highscore in einer Datei ab
-    #implementiere diese Funktion
     x = open("HighscoreGuessingGame.txt", "w")
     x.write(f"Highscore: {score}")
 def play():
