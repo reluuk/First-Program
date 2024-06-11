@@ -1,1 +1,1 @@
-Guessing Game generiert eine Zufallszahl und man kann diese kann erraten.
+Guessing Game generiert eine Zufallszahl und man kann diese dann erraten.
