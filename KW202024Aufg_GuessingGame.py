@@ -2,7 +2,8 @@ import random
 def save_score(score):
     #speichert den Highscore in einer Datei ab
     #implementiere diese Funktion
-    pass
+    x = open("HighscoreGuessingGame.txt", "w")
+    x.write(f"Highscore: {score}")
 def play():
     random_num = random.randint(1,100)
     print(f"DEBUG: {random_num}")
@@ -38,8 +39,9 @@ def play():
             erraten_num = geraten_num
     if score == 10:
                 print(f"Zu viele Versuche! ({score})")
+    return score
 while True:
-    play()
+    save_score(play())
     correctUserInput = False
     while not correctUserInput:
         Continue = input("Nochmal spielen? [j/n]")
