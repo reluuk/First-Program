@@ -1,4 +1,8 @@
 import random
+def save_score(score):
+    #speichert den Highscore in einer Datei ab
+    #implementiere diese Funktion
+    pass
 def play():
     random_num = random.randint(1,100)
     print(f"DEBUG: {random_num}")
