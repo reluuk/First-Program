@@ -1,7 +1,3 @@
-#
-
-
-
 import random
 def play():
     random_num = random.randint(1,100)
