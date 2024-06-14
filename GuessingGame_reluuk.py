@@ -6,10 +6,9 @@ def save_score(score, playername):
         x.close()
 def play():
     random_num = random.randint(1,100)
-    print(f"DEBUG: {random_num}")
+    # print(f"DEBUG: {random_num}")
     win = False
     score = 0
-
     while score < 10 and win == False:
         score += 1 # Kurzform für score = score + 1
         geraten_num = input(f"({score})Guess a number from 1 to 100:")
@@ -41,8 +40,8 @@ def play():
                 print(f"Zu viele Versuche! ({score})")
     return score
 while True:
-    playername = input("input your playername: "
-    save_score(play(),playername))
+    playername = input("input your playername: ")
+    save_score(play(),playername)
     correctUserInput = False
     while not correctUserInput:
         Continue = input("play again? [y/n]")
